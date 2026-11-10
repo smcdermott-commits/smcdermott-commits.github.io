@@ -719,7 +719,8 @@ footer p {
 .youtube-aspect-ratio {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    aspect-ratio: 9 / 16; /* Vertical YouTube Shorts format */
+    overflow: hidden;
 }
 
 .youtube-aspect-ratio iframe {
