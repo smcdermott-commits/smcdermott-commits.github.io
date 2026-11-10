@@ -13,9 +13,9 @@ skills:
 
 ## Project Demonstration
 
-The first video shows the project in action.
+The first video shows Remy in action.
 
-{% include youtube-video.html id="1TSq6OtyHCs" %}
+{% include local-video.html src="/_projects/remy/Remy.mp4" %}
 
 ## Overview
 
@@ -34,9 +34,9 @@ Built an animatronic Remy the Rat headband featuring two servo-driven arms that 
 - Alternated the arm movements by commanding the two servos to move between their calibrated up and down positions.
 - Accounted for the mirrored physical mounting of the servos by defining separate position values for the left and right servos.
 
-## Additional Demonstration
+## Remy on Head
 
-{% include youtube-video.html id="xMDeFViIPk0" %}
+{% include local-video.html src="/_projects/remy/Remy_On_Head.mp4" %}
 
 ## Hardware Documentation
 
