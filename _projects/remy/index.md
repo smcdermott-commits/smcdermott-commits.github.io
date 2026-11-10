@@ -15,7 +15,7 @@ skills:
 
 The first video shows the project in action.
 
-{% include youtube-video.html id="1TSq6OtyHCs" autoplay="false" %}
+{% include youtube-video.html id="1TSq6OtyHCs" %}
 
 ## Overview
 
@@ -36,7 +36,7 @@ Built an animatronic Remy the Rat headband featuring two servo-driven arms that 
 
 ## Additional Demonstration
 
-{% include youtube-video.html id="xMDeFViIPk0" autoplay="false" %}
+{% include youtube-video.html id="xMDeFViIPk0" %}
 
 ## Hardware Documentation
 
@@ -47,8 +47,8 @@ Built an animatronic Remy the Rat headband featuring two servo-driven arms that 
 
 ## Planned Development
 
-Plan to integrate a GY-521 module (based on the MPU-6050) to measure head orientation and use head tilt to control Remy's arm movements. This will add an interactive mode alongside the existing idle animation.
+The original creator also proposed using an accelerometer to detect head orientation and trigger interactive movement. I plan to explore that idea using a GY-521 module (based on the MPU-6050). The implementation will need to be adapted for the Teensy 3.6 rather than directly reusing the original controller's approach, including adapting how sensor data is read and integrated with the servo-control code.
 
 ## Acknowledgments
 
-Inspired by [She Builds Robots' Remy Model](https://github.com/shebuildsrobots/remy_model). This project uses the original STL model and adapts its servo-and-wire linkage concept. The original design and model are credited to its creator.
+Inspired by [She Builds Robots' Remy Model](https://github.com/shebuildsrobots/remy_model). This project uses the original STL model and adapts its servo-and-wire linkage concept. The accelerometer interaction was also an idea from the original creator; my planned implementation will be adapted for the Teensy 3.6 platform.
