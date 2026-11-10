@@ -978,3 +978,21 @@ nav .left .subtitle {
         font-size: 11px;
     }
 }
+
+
+/* Clean, vertical project videos */
+.portfolio-video-wrap {
+    width: 100%;
+    max-width: 360px;
+    margin: 0;
+}
+
+.portfolio-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 10px;
+}
