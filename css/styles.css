@@ -627,8 +627,60 @@ footer p {
 }
   
 .post-view .content {
-    padding: 0 50px;
+    padding: 0 50px 40px;
     border-radius: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+
+.post-view .content h2 {
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    line-height: 1.3;
+    margin: 2.2rem 0 0.8rem;
+}
+
+.post-view .content h3 {
+    font-size: clamp(1.08rem, 1.5vw, 1.3rem);
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 1.6rem 0 0.55rem;
+}
+
+.post-view .content p,
+.post-view .content li {
+    font-size: clamp(0.98rem, 1.1vw, 1.08rem);
+    line-height: 1.75;
+}
+
+.post-view .content ul,
+.post-view .content ol {
+    padding-left: 1.5rem;
+    margin: 0.7rem 0 1.2rem;
+}
+
+.post-view .content li { margin: 0.35rem 0; }
+.post-view .content > h2:first-child { margin-top: 0.5rem; }
+
+.project-main-video {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 24px;
+    background: #111;
+}
+
+.project-card-video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
  
 .post-view .content .image-gallery {
@@ -980,28 +1032,44 @@ nav .left .subtitle {
 }
 
 
-/* Clean, vertical project videos */
+/* Responsive project videos stay inside the content column */
 .portfolio-video-wrap {
-    float: right;
-    width: 100%;
-    max-width: 260px;
-    margin: 0 0 24px 28px;
+    display: block;
+    float: none;
+    width: min(100%, 280px);
+    margin: 22px auto 28px;
+    clear: both;
 }
-
-@media (max-width: 768px) {
-    .portfolio-video-wrap {
-        float: none;
-        max-width: 220px;
-        margin: 16px auto 24px;
-    }
-}
-
+.portfolio-video-wrap.portfolio-video-large { width: min(100%, 310px); }
 .portfolio-video {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     aspect-ratio: 9 / 16;
     object-fit: contain;
-    background: transparent;
+    background: #111;
     border-radius: 10px;
+}
+.portfolio-video-caption {
+    color: var(--text-color);
+    opacity: 0.75;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 9px;
+}
+.post-view .summary img,
+.post-view .summary .project-main-video {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto 24px;
+}
+@media (max-width: 768px) {
+    .post-view .content { padding: 0 12px 28px; }
+    .portfolio-video-wrap,
+    .portfolio-video-wrap.portfolio-video-large {
+        width: min(100%, 290px);
+        margin: 18px auto 24px;
+    }
 }
