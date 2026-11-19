@@ -8,7 +8,13 @@ layout: wrapper
        
         {% assign folder_path = page.path | split: "/" | slice: 0, 2 | join: "/" %}
         {% assign image_path = "/" | append: folder_path | append: page['main-image'] %}       
+        {% if page['main-video'] %}
+        <video class="project-main-video" autoplay muted loop playsinline preload="metadata">
+            <source src="{{ page['main-video'] | prepend: '/' | prepend: folder_path | relative_url }}" type="video/mp4">
+        </video>
+        {% elsif page['main-image'] %}
         <img src="{{ image_path }}" alt="{{ page.title }} image">
+        {% endif %}
         
         <div class="title-header">
             <h1>{{page.title}}</h1>
