@@ -570,12 +570,12 @@ footer p {
 
 .post-view {
     margin: 25px auto;
-    border: 1px solid rgba(0, 0, 0, 0.05);    
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
-                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border-radius: 10px
-     
-  }
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 .post-view .summary{
     padding: 25px 50px;  
@@ -627,11 +627,14 @@ footer p {
 }
   
 .post-view .content {
+    display: flow-root;
     padding: 0 50px 40px;
     border-radius: 10px;
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     line-height: 1.75;
+    overflow: hidden;
 }
 
 .post-view .content h2 {
@@ -677,6 +680,7 @@ footer p {
     display: block;
     width: 100%;
     max-width: 100%;
+    height: auto;
     aspect-ratio: 3 / 1;
     object-fit: cover;
     border-radius: 6px;
@@ -1069,6 +1073,40 @@ nav .left .subtitle {
     .post-view .content { padding: 0 12px 28px; }
     .portfolio-video-wrap,
     .portfolio-video-wrap.portfolio-video-large {
+        width: min(100%, 290px);
+        margin: 18px auto 24px;
+    }
+}
+
+
+/* Keep embedded clips contained within the project card */
+.post-view .content .portfolio-video-wrap {
+    float: none !important;
+    position: relative;
+    display: block;
+    width: min(100%, 280px);
+    max-width: 100%;
+    margin: 22px auto 28px;
+    clear: both;
+}
+.post-view .content .portfolio-video-wrap.portfolio-video-large {
+    width: min(100%, 310px);
+}
+.post-view .content .portfolio-video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+}
+.post-view .summary .project-main-video {
+    display: none !important;
+}
+@media (max-width: 768px) {
+    .post-view .content { padding: 0 12px 28px; }
+    .post-view .content .portfolio-video-wrap,
+    .post-view .content .portfolio-video-wrap.portfolio-video-large {
         width: min(100%, 290px);
         margin: 18px auto 24px;
     }
