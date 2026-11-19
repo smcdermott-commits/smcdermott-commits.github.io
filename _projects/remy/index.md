@@ -2,6 +2,7 @@
 layout: post
 title: Remy — 2-Axis Animatronic Head
 description: An evolving wearable animatronic head, from a tethered Teensy prototype to a compact, battery-powered ESP32-C3 build with live IMU head tracking.
+main-video: Remy.mp4
 skills:
   - Embedded C++
   - Teensy 3.6
@@ -23,7 +24,7 @@ Remy is a compact, 2-axis animatronic head driven by two 9g micro servos. The pr
 
 The first version used a Teensy 3.6, two 9g micro servos, and a USB phone-charger power brick. It established the mechanical concept and demonstrated automated head movement.
 
-{% include local-video.html src="/_projects/remy/v1lookaround.mp4" %}
+{% include local-video.html src="/_projects/remy/v1lookaround.mp4" size="large" caption="v1 lookaround — the original prototype uses randomized servo movements to look from side to side." %}
 
 ### Power Limitations and Scope Changes
 
