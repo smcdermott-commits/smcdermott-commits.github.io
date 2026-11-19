@@ -982,9 +982,18 @@ nav .left .subtitle {
 
 /* Clean, vertical project videos */
 .portfolio-video-wrap {
+    float: right;
     width: 100%;
-    max-width: 340px;
-    margin: 0;
+    max-width: 260px;
+    margin: 0 0 24px 28px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-video-wrap {
+        float: none;
+        max-width: 220px;
+        margin: 16px auto 24px;
+    }
 }
 
 .portfolio-video {
