@@ -8,7 +8,13 @@
         <div class="project-card">
             {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
             {% assign image_path = "/" | append: folder_path | append: item['main-image'] %}
+            {% if item['main-video'] %}
+            <video class="project-card-video" autoplay muted loop playsinline preload="metadata">
+                <source src="{{ item['main-video'] | prepend: '/' | prepend: folder_path | relative_url }}" type="video/mp4">
+            </video>
+            {% elsif item['main-image'] %}
             <img src="{{ image_path }}" alt="{{ item.title }} image">
+            {% endif %}
             <h3 class="project-title">{{ item.title }}</h3>
             <div class="project-skills">
                 {% for skill in item.skills %}
