@@ -1,6 +1,9 @@
-<div class="portfolio-video-wrap">
+<figure class="portfolio-video-wrap{% if include.size == 'large' %} portfolio-video-large{% endif %}">
   <video class="portfolio-video" autoplay muted loop playsinline preload="metadata">
     <source src="{{ include.src | relative_url }}" type="video/mp4">
     Your browser does not support embedded video.
   </video>
-</div>
+  {% if include.caption %}
+    <figcaption class="portfolio-video-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
