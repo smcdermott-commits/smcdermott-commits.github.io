@@ -1460,3 +1460,62 @@ body:has(.portfolio-home) {
 .portfolio-projects .project-link:hover .project-card {
   border-color: #B8C036;
 }
+
+
+/* HUMANFINNY-INSPIRED PORTFOLIO THEME — explicit overrides */
+:root {
+  --text-color: #343536;
+  --border-color: #9FBCE1;
+  --link-color: #769CBE;
+  --highlight-color: #B8C036;
+  --background-color: #F9F4F5;
+  --light-background-color: #E4E5EA;
+}
+body:has(.portfolio-home) {
+  background: #F9F4F5 !important;
+}
+.profile-card,
+.portfolio-projects .project-card {
+  background: #FEFEFE !important;
+  border: 1px solid #9FBCE1 !important;
+}
+.profile-card > h1,
+.portfolio-projects .project-card-heading h2,
+.profile-intro p {
+  color: #343536 !important;
+}
+.profile-headline,
+.profile-intro h2 span,
+.profile-links h2 span,
+.project-section-heading .eyebrow,
+.project-arrow {
+  color: #769CBE !important;
+}
+.profile-divider,
+.profile-links {
+  border-color: #9FBCE1 !important;
+}
+.profile-links a {
+  background: #F9F4F5 !important;
+  border-color: #9FBCE1 !important;
+}
+.profile-links a:hover {
+  background: #B8C036 !important;
+  border-color: #B8C036 !important;
+  color: #343536 !important;
+}
+.project-card-media {
+  background: #E4E5EA !important;
+}
+.portfolio-projects .project-skills .skill {
+  background: #EAF0F8 !important;
+  color: #405F82 !important;
+  border-color: #9FBCE1 !important;
+}
+.project-read-more {
+  color: #8E9824 !important;
+}
+.portfolio-projects .project-link:hover .project-card {
+  border-color: #B8C036 !important;
+  box-shadow: 0 8px 22px rgba(52, 53, 54, .12) !important;
+}
