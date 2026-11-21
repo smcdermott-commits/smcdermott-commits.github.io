@@ -1403,3 +1403,60 @@ body:has(.portfolio-home) footer {
   .portfolio-projects .project-card { grid-template-columns: 1fr; }
   .project-card-media { height: 200px; }
 }
+
+
+/* RETRO BLUE + CHARTREUSE PALETTE */
+body:has(.portfolio-home) {
+  background: #F9F4F5;
+}
+.profile-card,
+.portfolio-projects .project-card {
+  background: #FEFEFE;
+  border-color: #9FBCE1;
+}
+.profile-avatar {
+  border-color: #769CBE;
+}
+.profile-divider,
+.profile-links {
+  border-color: #D2DCE8;
+}
+.profile-links a {
+  background: #F9F4F5;
+  border-color: #9FBCE1;
+}
+.profile-links a:hover {
+  border-color: #B8C036;
+  color: #343536;
+}
+.profile-headline,
+.profile-intro h2 span,
+.profile-links h2 span,
+.project-section-heading .eyebrow,
+.project-arrow {
+  color: #769CBE;
+}
+.project-count,
+.profile-note {
+  color: #7D8189;
+}
+.project-card-media {
+  background: #E4E5EA;
+}
+.project-card-placeholder {
+  background: linear-gradient(135deg, #F9F4F5, #9FBCE1);
+}
+.project-card-placeholder span {
+  color: #527EAD;
+}
+.portfolio-projects .project-skills .skill {
+  background: #EAF0F8;
+  color: #405F82;
+  border-color: #9FBCE1;
+}
+.project-read-more {
+  color: #8E9824;
+}
+.portfolio-projects .project-link:hover .project-card {
+  border-color: #B8C036;
+}
