@@ -2011,3 +2011,147 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .post-view .content { padding: 10px 16px 28px; }
   .post-view .content p, .post-view .content li { font-size: 13px; }
 }
+
+
+/* FRUTIGER AERO — Bruno Ace SC headings + Fira Mono body */
+:root {
+  --text-color: #343536;
+  --border-color: #9FBCE1;
+  --link-color: #397FB5;
+  --highlight-color: #B8C036;
+  --background-color: #EAF5FC;
+  --light-background-color: #D9ECF8;
+}
+html, body {
+  color: #343536 !important;
+  background: #EAF5FC !important;
+}
+body, p, li, a, span, button, input, textarea, label, small,
+.project-description, .project-count, .profile-headline, .profile-intro p,
+.portfolio-projects .project-description, .post-view .content,
+.post-view .content p, .post-view .content li, .post-view .content blockquote,
+.post-view .skills-card, .post-view .skills-list, .post-view .skill,
+code, pre, .project-read-more {
+  font-family: 'Fira Mono', monospace !important;
+}
+h1, h2, h3, h4, h5, h6,
+.profile-card > h1, .profile-intro h2, .profile-links h2,
+.project-section-heading h1, .project-section-heading .eyebrow,
+.portfolio-projects .project-card-heading h2,
+.post-view h1, .post-view h2, .post-view h3, .post-view h4,
+.title-header h1, .project-description h2, .skills-card h2 {
+  font-family: 'Bruno Ace SC', sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: .015em;
+}
+body {
+  line-height: 1.65 !important;
+  background:
+    radial-gradient(ellipse at 88% 3%, rgba(255,255,255,.95) 0, rgba(255,255,255,0) 35rem),
+    linear-gradient(145deg, #EAF5FC 0%, #D9ECF8 52%, #EEF7FB 100%) !important;
+}
+p, li, .post-view .content p, .post-view .content li {
+  font-size:  .96rem;
+  line-height: 1.75 !important;
+}
+a { color: #245F8A; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #65751A !important;
+  outline-offset: 3px;
+}
+
+/* Green profile panel and glossy powder-blue controls */
+.profile-card {
+  background: linear-gradient(145deg, #B8C036 0%, #AAB632 100%) !important;
+  color: #FFFDF6 !important;
+  border: 1px solid rgba(255,255,255,.82) !important;
+  border-radius: 22px !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.72), 0 12px 28px rgba(48,75,92,.16) !important;
+}
+.profile-card > h1, .profile-card .profile-headline,
+.profile-card .profile-intro h2, .profile-card .profile-intro h2 span,
+.profile-card .profile-links h2, .profile-card .profile-links h2 span,
+.profile-card .profile-intro p {
+  color: #FFFDF6 !important;
+}
+.profile-card .profile-intro p { font-size: .88rem; line-height: 1.75 !important; }
+.profile-card .profile-divider, .profile-card .profile-links {
+  border-color: rgba(255,253,246,.62) !important;
+}
+.profile-card .profile-links a {
+  background: linear-gradient(180deg, #DDF1FC 0%, #9FBCE1 100%) !important;
+  color: #263E50 !important;
+  border: 1px solid #FFFFFF !important;
+  border-radius: 12px !important;
+  box-shadow: inset 0 1px 0 #fff, 0 4px 10px rgba(37,61,79,.16) !important;
+}
+.profile-card .profile-links a span { color: #263E50 !important; }
+.profile-card .profile-links a:hover { background: #F4FAFE !important; }
+
+/* Translucent blue glass project cards */
+.portfolio-projects .project-card {
+  background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(224,241,251,.90)) !important;
+  border: 1px solid #9FBCE1 !important;
+  border-radius: 20px !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.98), 0 9px 24px rgba(45,83,112,.12) !important;
+  backdrop-filter: blur(10px);
+}
+.portfolio-projects .project-link:hover .project-card {
+  border-color: #B8C036 !important;
+  box-shadow: inset 0 1px 0 #fff, 0 13px 28px rgba(45,83,112,.18) !important;
+}
+.portfolio-projects .project-card-heading h2,
+.project-section-heading h1 { color: #343536 !important; }
+.project-section-heading .eyebrow, .project-arrow { color: #397FB5 !important; }
+.portfolio-projects .project-description { color: #343536 !important; font-size: .86rem; line-height: 1.75 !important; }
+.portfolio-projects .project-skills .skill {
+  background: #EAF4FB !important; color: #294E68 !important;
+  border: 1px solid #9FBCE1 !important; border-radius: 999px;
+}
+.project-read-more { color: #65751A !important; font-size: .76rem; }
+.project-card-media { background: linear-gradient(145deg, #D9ECF8, #9FBCE1) !important; }
+
+/* Project detail pages share the same typography, palette and glass treatment */
+.post-view {
+  background: linear-gradient(145deg, rgba(255,255,255,.97), rgba(235,246,252,.94)) !important;
+  color: #343536 !important;
+  border: 1px solid #9FBCE1 !important;
+  border-radius: 22px !important;
+  box-shadow: 0 10px 28px rgba(45,83,112,.12), inset 0 1px 0 #fff !important;
+}
+.post-view .summary, .post-view .content { color: #343536 !important; }
+.post-view h1, .post-view h2, .post-view h3, .post-view h4 {
+  color: #343536 !important;
+  line-height: 1.35 !important;
+}
+.post-view .content, .post-view .content p, .post-view .content li {
+  color: #343536 !important;
+  font-size: .92rem;
+  line-height: 1.8 !important;
+}
+.post-view .content a { color: #245F8A !important; }
+.post-view .content blockquote {
+  background: #EAF5FC !important;
+  border-left: 4px solid #86AADA !important;
+  color: #343536 !important;
+}
+.post-view .skills-card, .post-view .project-description {
+  color: #343536 !important;
+}
+.post-view .skill, .post-view .skills-list .skill {
+  background: #EAF4FB !important;
+  color: #294E68 !important;
+  border: 1px solid #9FBCE1 !important;
+}
+.post-view img, .post-view video {
+  border-radius: 14px;
+  max-width: 100%;
+}
+pre, code {
+  background-color: #E4F0F8 !important;
+  color: #263E50 !important;
+}
+@media (max-width: 650px) {
+  .post-view { border-radius: 16px !important; padding-left: 16px; padding-right: 16px; }
+  .post-view .content, .post-view .content p, .post-view .content li { font-size: .86rem; }
+}
