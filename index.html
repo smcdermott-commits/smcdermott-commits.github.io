@@ -1,13 +1,10 @@
 ---
-# Main homepage: project and skills listings are available separately.
 layout: wrapper
 ---
 
-{% comment %}
-Temporarily hidden from the homepage. Restore either section by uncommenting
-its include below.
-{% include projects.html %}
-{% include skills.html %}
-{% endcomment %}
-
-{% include contact.html %}
+<div class="portfolio-home">
+  {% include profile-sidebar.html %}
+  <main class="portfolio-projects">
+    {% include projects.html %}
+  </main>
+</div>
