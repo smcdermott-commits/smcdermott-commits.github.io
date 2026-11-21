@@ -1519,3 +1519,154 @@ body:has(.portfolio-home) {
   border-color: #B8C036 !important;
   box-shadow: 0 8px 22px rgba(52, 53, 54, .12) !important;
 }
+
+
+/* FRUTIGER AERO-INSPIRED THEME: sky blue, glass, chartreuse, charcoal */
+:root {
+  --text-color: #303943;
+  --border-color: #A9CBE4;
+  --link-color: #397FB5;
+  --highlight-color: #B8C036;
+  --background-color: #EAF5FC;
+  --light-background-color: #D9ECF8;
+}
+html {
+  background: #EAF5FC;
+}
+body {
+  color: #303943;
+  background:
+    radial-gradient(ellipse at 88% 4%, rgba(255,255,255,.96) 0, rgba(255,255,255,0) 34rem),
+    linear-gradient(145deg, #EAF5FC 0%, #D8ECF8 52%, #EEF7FB 100%);
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1, h2, h3, .project-read-more, .profile-intro h2, .profile-links h2,
+.project-section-heading .eyebrow, .profile-headline {
+  font-family: 'Pixelify Sans', 'Nunito Sans', sans-serif;
+}
+
+/* Profile card: chartreuse green with warm-white typography */
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #BFCB3D 0%, #AAB632 100%) !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.65), 0 12px 28px rgba(48,75,92,.14) !important;
+  color: #F9F4F5;
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: -78px;
+  right: -60px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.55), rgba(255,255,255,.08) 62%, transparent 70%);
+  pointer-events: none;
+}
+.profile-card > * {
+  position: relative;
+  z-index: 1;
+}
+.profile-card > h1,
+.profile-card .profile-intro p,
+.profile-card .profile-headline,
+.profile-card .profile-intro h2,
+.profile-card .profile-links h2,
+.profile-card .profile-intro h2 span,
+.profile-card .profile-links h2 span {
+  color: #FFFDF6 !important;
+}
+.profile-card > h1 {
+  text-shadow: 0 1px 1px rgba(49,64,26,.12);
+}
+.profile-card .profile-headline {
+  opacity: .98;
+  letter-spacing: .09em;
+}
+.profile-card .profile-divider,
+.profile-card .profile-links {
+  border-color: rgba(255,253,246,.48) !important;
+  background-color: rgba(255,253,246,.48);
+}
+.profile-card .profile-intro p {
+  font-size: .96rem;
+  line-height: 1.65;
+  text-shadow: 0 1px 1px rgba(49,64,26,.08);
+}
+.profile-card .profile-links a {
+  background: linear-gradient(180deg, #D9EEFC 0%, #BFDDF2 100%) !important;
+  border: 1px solid rgba(255,255,255,.9) !important;
+  color: #293D50 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.95), 0 3px 8px rgba(51,79,102,.12);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.profile-card .profile-links a span {
+  color: #293D50 !important;
+}
+.profile-card .profile-links a:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #EAF7FF 0%, #CBE6F8 100%) !important;
+  box-shadow: inset 0 1px 0 #fff, 0 6px 14px rgba(51,79,102,.2);
+}
+.profile-note {
+  color: #506B80;
+}
+
+/* Project cards: translucent glass-like surfaces on a soft sky background */
+.portfolio-projects .project-card {
+  background: linear-gradient(145deg, rgba(255,255,255,.94), rgba(242,249,253,.88)) !important;
+  border: 1px solid rgba(132,177,207,.72) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.98), 0 8px 22px rgba(58,91,115,.09) !important;
+  backdrop-filter: blur(10px);
+}
+.portfolio-projects .project-link:hover .project-card {
+  border-color: #8DBBD9 !important;
+  box-shadow: inset 0 1px 0 #fff, 0 13px 28px rgba(58,91,115,.16) !important;
+}
+.portfolio-projects .project-card-heading h2 {
+  color: #303943;
+}
+.project-section-heading h1 {
+  color: #303943;
+}
+.project-section-heading .eyebrow,
+.project-arrow {
+  color: #397FB5 !important;
+}
+.portfolio-projects .project-description {
+  color: #3C4853;
+}
+.portfolio-projects .project-skills .skill {
+  background: linear-gradient(180deg, #F0F8FE, #DCEFFA) !important;
+  border-color: #B4D4E9 !important;
+  color: #315D7D !important;
+}
+.project-read-more {
+  color: #77821F !important;
+}
+.project-card-media {
+  background: linear-gradient(145deg, #D9ECF8, #C6E0F1) !important;
+  box-shadow: inset 0 1px 5px rgba(54,92,119,.08);
+}
+.project-count {
+  color: #607A8C;
+}
+
+/* Keep the palette legible and consistent on project detail pages too */
+.post-view {
+  background: rgba(255,255,255,.9);
+  border-color: #B4D2E5;
+  box-shadow: 0 10px 28px rgba(58,91,115,.10);
+}
+.post-view .content a {
+  color: #2879B5;
+}
+.post-view .content blockquote {
+  border-left-color: #8CB9D7;
+  background: #EAF5FC;
+}
+@media (max-width: 650px) {
+  .profile-card { background: linear-gradient(145deg, #BFCB3D, #AAB632) !important; }
+}
