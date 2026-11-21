@@ -17,6 +17,12 @@ skills:
 
 This exploratory build was an opportunity to get hands-on experience with optical sensors, breadboard prototyping, and digital and PWM signal control on an Arduino Uno. Starting with a kit of unfamiliar sensor modules, I paired a KY-008 red laser transmitter with a KY-033 infrared line-tracking sensor to create a break-beam tripwire alarm with visual status indicators.
 
+## Live Demonstration
+
+Here’s a walkthrough of the tripwire alarm in action, including a demonstration of the sensor and alarm response.
+
+{% include local-video.html src="/_projects/laser-tripwire/tripwire.mp4" size="large" caption="Demonstrating the laser tripwire alarm system." %}
+
 ## How It Works
 
 The KY-008 projects a continuous red laser beam toward the optical receiver on the KY-033. The sensor output controls two status LEDs:
