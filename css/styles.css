@@ -2168,3 +2168,124 @@ pre, code {
   }
   .portfolio-projects .project-description { font-size: .90rem !important; }
 }
+
+
+/* REQUESTED REFINEMENTS — dark blue cards, readable contrast, consistent project pages */
+/* The About block is deliberately all Fira Mono, including its label. */
+.profile-card .profile-intro,
+.profile-card .profile-intro *,
+.profile-card .profile-intro h2,
+.profile-card .profile-intro h2 span,
+.profile-card .profile-intro p {
+  font-family: 'Fira Mono', 'Courier New', monospace !important;
+}
+
+/* Deeper Frutiger Aero blue glass project cards with warm, high-contrast text. */
+.portfolio-projects .project-card {
+  background:
+    radial-gradient(ellipse at 88% 0%, rgba(255,255,255,.20), transparent 52%),
+    linear-gradient(145deg, #376F93 0%, #285777 58%, #214B69 100%) !important;
+  border: 1px solid #8FB9D5 !important;
+  color: #FFFDF6 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.32), 0 10px 26px rgba(24,61,86,.24) !important;
+}
+.portfolio-projects .project-card-heading h2,
+.portfolio-projects .project-description,
+.portfolio-projects .project-card-copy,
+.portfolio-projects .project-card-copy p {
+  color: #FFFDF6 !important;
+}
+.portfolio-projects .project-arrow { color: #D5ECFA !important; }
+.portfolio-projects .project-read-more {
+  color: #E5F2A5 !important;
+}
+.portfolio-projects .project-skills .skill {
+  background: #E4F2FA !important;
+  border: 1px solid #B9D8EA !important;
+  color: #203F56 !important;
+}
+.portfolio-projects .project-link:hover .project-card {
+  background:
+    radial-gradient(ellipse at 88% 0%, rgba(255,255,255,.25), transparent 52%),
+    linear-gradient(145deg, #407FA6 0%, #2C6387 58%, #245575 100%) !important;
+  border-color: #B8C036 !important;
+}
+
+/* Detail pages: explicit project-page scope prevents the template's legacy
+   styles from winning, and applies the Aero treatment to the full page. */
+body:has(.post-view) {
+  background:
+    radial-gradient(ellipse at 88% 2%, rgba(255,255,255,.96) 0, transparent 34rem),
+    linear-gradient(145deg, #EAF5FC 0%, #D8ECF8 54%, #F1F8FC 100%) !important;
+  color: #303943 !important;
+}
+.page:has(.post-view) {
+  background: transparent !important;
+}
+.post-view {
+  display: block;
+  background:
+    radial-gradient(ellipse at 90% 0%, rgba(255,255,255,.82), transparent 48%),
+    linear-gradient(145deg, rgba(255,255,255,.97), rgba(218,238,250,.96)) !important;
+  border: 1px solid #8FB9D5 !important;
+  border-radius: 22px !important;
+  color: #303943 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.98), 0 12px 30px rgba(35,77,105,.16) !important;
+  overflow: hidden;
+}
+.post-view .summary {
+  background: linear-gradient(145deg, rgba(201,229,246,.72), rgba(231,244,251,.78)) !important;
+  border-bottom: 1px solid #A9CBE4 !important;
+  color: #303943 !important;
+}
+.post-view .summary h1,
+.post-view .summary h2,
+.post-view .title-header h1,
+.post-view .project-description h2,
+.post-view .skills-card h2,
+.post-view .content h2,
+.post-view .content h3,
+.post-view .content h4 {
+  color: #263F52 !important;
+  font-family: 'Bruno Ace SC', sans-serif !important;
+}
+.post-view .summary p,
+.post-view .content,
+.post-view .content p,
+.post-view .content li,
+.post-view .content td,
+.post-view .content th,
+.post-view .skills-card,
+.post-view .skills-list {
+  color: #303943 !important;
+  font-family: 'Fira Mono', 'Courier New', monospace !important;
+}
+.post-view .content {
+  background: rgba(255,255,255,.72) !important;
+}
+.post-view .content a {
+  color: #174F75 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+.post-view .content blockquote {
+  background: #DCEFFA !important;
+  border-left: 4px solid #397FB5 !important;
+  color: #263F52 !important;
+}
+.post-view .summary .skill,
+.post-view .skills-list .skill {
+  background: #315F80 !important;
+  color: #FFFDF6 !important;
+  border: 1px solid #8FB9D5 !important;
+}
+.post-view .content img,
+.post-view .content video {
+  max-width: 100%;
+  border: 1px solid #B4D2E5;
+  border-radius: 14px;
+}
+@media (max-width: 650px) {
+  .post-view { border-radius: 16px !important; }
+  .post-view .summary { background: #DCEFFA !important; }
+}
