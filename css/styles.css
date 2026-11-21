@@ -1298,7 +1298,7 @@ body:has(.portfolio-home) footer {
   aspect-ratio: auto;
 }
 .project-card-media video {
-  object-fit: contain;
+  object-fit: cover;
   background: #111;
 }
 .project-card-placeholder {
