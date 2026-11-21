@@ -2,6 +2,7 @@
 layout: post
 title: Laser Tripwire Alarm System
 order: 2
+main-video: tripwire.mp4
 description: An Arduino-based break-beam alarm using a KY-008 red laser transmitter and KY-033 optical sensor, with PWM-dimmed green status and red alarm indicators.
 skills:
   - Arduino Uno
