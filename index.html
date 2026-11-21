@@ -1,8 +1,13 @@
 ---
-# Main homepage: projects appear immediately below the navigation.
+# Main homepage: project and skills listings are available separately.
 layout: wrapper
 ---
 
+{% comment %}
+Temporarily hidden from the homepage. Restore either section by uncommenting
+its include below.
 {% include projects.html %}
 {% include skills.html %}
+{% endcomment %}
+
 {% include contact.html %}
