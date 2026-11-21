@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Remy — 2-Axis Animatronic Head
+order: 1
 description: An evolving wearable animatronic head, from a tethered Teensy prototype to a compact, battery-powered ESP32-C3 build with live IMU head tracking.
 main-video: Remy.mp4
 skills:
