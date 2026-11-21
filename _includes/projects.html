@@ -1,32 +1,48 @@
-<!-- SECTION 3: project -->
+<!-- Project cards on the portfolio homepage -->
 <section id="projects" class="project-grid-section">
-    <h2>Projects</h2>
+  <div class="project-section-heading">
+    <div>
+      <p class="eyebrow">SELECTED WORK</p>
+      <h1>Projects</h1>
+    </div>
+    <span class="project-count">{{ site.projects | size }} projects</span>
+  </div>
 
-    <div class="grid-container">
-        {% for item in site.projects %}
-    <a href="{{ item.url }}" class="project-link">
-        <div class="project-card">
-            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
-            {% assign image_path = "/" | append: folder_path | append: item['main-image'] %}
+  <div class="project-list">
+    {% assign ordered_projects = site.projects | sort: "order" %}
+    {% for item in ordered_projects %}
+      {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
+      {% assign image_path = "/" | append: folder_path | append: item['main-image'] %}
+      <a href="{{ item.url | relative_url }}" class="project-link">
+        <article class="project-card">
+          <div class="project-card-media">
             {% if item['main-video'] %}
-            <video class="project-card-video" autoplay muted loop playsinline preload="metadata">
+              <video class="project-card-video" autoplay muted loop playsinline preload="metadata">
                 <source src="{{ item['main-video'] | prepend: '/' | prepend: folder_path | relative_url }}" type="video/mp4">
-            </video>
+              </video>
             {% elsif item['main-image'] %}
-            <img src="{{ image_path }}" alt="{{ item.title }} image">
+              <img src="{{ image_path | relative_url }}" alt="{{ item.title }} project preview">
+            {% else %}
+              <div class="project-card-placeholder" aria-hidden="true">
+                <span>{{ item.title | slice: 0 }}</span>
+              </div>
             {% endif %}
-            <h3 class="project-title">{{ item.title }}</h3>
-            <div class="project-skills">
-                {% for skill in item.skills %}
-                    <span class="skill">{{ skill }}</span>
-                {% endfor %}
+          </div>
+          <div class="project-card-copy">
+            <div class="project-card-heading">
+              <h2>{{ item.title }}</h2>
+              <span class="project-arrow" aria-hidden="true">↗</span>
             </div>
             <p class="project-description">{{ item.description }}</p>
-            <button class="read-more">Read more →</button>
-        </div>
-    </a>
-{% endfor %}
-    </div>
-
-
- </section>
+            <div class="project-skills">
+              {% for skill in item.skills limit: 5 %}
+                <span class="skill">{{ skill }}</span>
+              {% endfor %}
+            </div>
+            <span class="project-read-more">Explore project <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+      </a>
+    {% endfor %}
+  </div>
+</section>
