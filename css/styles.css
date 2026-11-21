@@ -1670,3 +1670,166 @@ h1, h2, h3, .project-read-more, .profile-intro h2, .profile-links h2,
 @media (max-width: 650px) {
   .profile-card { background: linear-gradient(145deg, #BFCB3D, #AAB632) !important; }
 }
+
+
+/* POLISHED RETRO / SOFT FRUTIGER AERO THEME */
+:root {
+  --text-color: #293744;
+  --border-color: #C2D5E4;
+  --link-color: #356F9C;
+  --highlight-color: #71833B;
+  --background-color: #EAF1F6;
+  --light-background-color: #DCE8F1;
+}
+html, body {
+  background: #EAF1F6 !important;
+  color: #293744;
+}
+body {
+  font-family: 'Roboto Slab', Georgia, serif !important;
+  line-height: 1.65;
+  background:
+    radial-gradient(ellipse at 85% 0%, rgba(255,255,255,.9), transparent 34rem),
+    linear-gradient(145deg, #EEF4F8 0%, #E4EDF4 100%) !important;
+}
+h1, h2, h3, h4, h5, h6,
+.project-read-more, .profile-intro h2, .profile-links h2,
+.project-section-heading .eyebrow, .profile-headline {
+  font-family: 'Retro', 'Roboto Slab', Georgia, serif !important;
+  letter-spacing: .015em;
+}
+
+/* Profile card: muted botanical green, warm-white text */
+.profile-card {
+  background: linear-gradient(150deg, #AAB77A 0%, #8F9F60 100%) !important;
+  color: #FFFDF5 !important;
+  border: 1px solid rgba(255,255,255,.78) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 12px 28px rgba(43,62,76,.12), inset 0 1px 0 rgba(255,255,255,.55) !important;
+}
+.profile-card::before {
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.34), rgba(255,255,255,.04) 65%, transparent 72%);
+}
+.profile-card > h1,
+.profile-card .profile-headline,
+.profile-card .profile-intro h2,
+.profile-card .profile-intro h2 span,
+.profile-card .profile-links h2,
+.profile-card .profile-links h2 span,
+.profile-card .profile-intro p {
+  color: #FFFDF5 !important;
+}
+.profile-card > h1 {
+  font-size: clamp(1.55rem, 2vw, 2rem);
+  line-height: 1.18;
+}
+.profile-card .profile-headline {
+  font-size: .83rem;
+  letter-spacing: .075em;
+  line-height: 1.55;
+}
+.profile-card .profile-intro p {
+  font-family: 'Roboto Slab', Georgia, serif !important;
+  font-size: .91rem;
+  line-height: 1.72;
+  text-shadow: none;
+}
+.profile-card .profile-divider,
+.profile-card .profile-links {
+  border-color: rgba(255,253,245,.48) !important;
+  background: transparent !important;
+}
+.profile-card .profile-links a {
+  background: linear-gradient(180deg, #E5F2FA 0%, #CFE3F1 100%) !important;
+  color: #263E50 !important;
+  border: 1px solid #F8FCFF !important;
+  border-radius: 12px !important;
+  box-shadow: 0 3px 10px rgba(37,61,79,.12), inset 0 1px 0 #fff !important;
+}
+.profile-card .profile-links a span {
+  color: #263E50 !important;
+}
+.profile-card .profile-links a:hover {
+  background: #F1F8FC !important;
+  transform: translateY(-1px);
+}
+.profile-note {
+  color: #526A7B !important;
+}
+
+/* Project cards stand apart from the page background */
+.portfolio-projects .project-card {
+  background: linear-gradient(145deg, #FFFFFF 0%, #F7FAFC 100%) !important;
+  border: 1px solid #C3D6E4 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 7px 20px rgba(45,70,88,.075), inset 0 1px 0 #fff !important;
+}
+.portfolio-projects .project-link:hover .project-card {
+  border-color: #8FB5D0 !important;
+  box-shadow: 0 12px 26px rgba(45,70,88,.13), inset 0 1px 0 #fff !important;
+}
+.portfolio-projects .project-card-heading h2,
+.project-section-heading h1 {
+  color: #293744 !important;
+  font-family: 'Retro', 'Roboto Slab', Georgia, serif !important;
+}
+.portfolio-projects .project-description {
+  color: #344553 !important;
+  font-family: 'Roboto Slab', Georgia, serif !important;
+  line-height: 1.7;
+}
+.project-section-heading .eyebrow,
+.project-arrow {
+  color: #397BA8 !important;
+}
+.project-card-media {
+  background: #DCEAF3 !important;
+  border: 1px solid #D2E1EB;
+  border-radius: 14px !important;
+}
+.portfolio-projects .project-skills .skill {
+  background: #E7F1F8 !important;
+  color: #294E68 !important;
+  border: 1px solid #C2D9E9 !important;
+  font-family: 'Roboto Slab', Georgia, serif !important;
+}
+.project-read-more {
+  color: #526B2D !important;
+  font-family: 'Retro', 'Roboto Slab', Georgia, serif !important;
+  letter-spacing: .045em;
+}
+.project-count {
+  color: #526A7B !important;
+}
+
+/* Detail pages use the same separated surface and readable text */
+.post-view {
+  background: #FFFFFF !important;
+  color: #293744 !important;
+  border: 1px solid #C3D6E4 !important;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(45,70,88,.08);
+}
+.post-view h1, .post-view h2, .post-view h3 {
+  font-family: 'Retro', 'Roboto Slab', Georgia, serif !important;
+  color: #293744 !important;
+}
+.post-view .content, .post-view .content p, .post-view .content li {
+  color: #344553 !important;
+  font-family: 'Roboto Slab', Georgia, serif !important;
+  line-height: 1.75;
+}
+.post-view .content a {
+  color: #245F8A !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.post-view .content blockquote {
+  background: #EDF4F8;
+  border-left-color: #7DAAC8;
+  color: #344553;
+}
+@media (max-width: 650px) {
+  .profile-card { background: linear-gradient(150deg, #AAB77A, #8F9F60) !important; }
+  .portfolio-projects .project-card { background: #FFFFFF !important; }
+}
