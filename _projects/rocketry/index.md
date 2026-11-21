@@ -3,6 +3,7 @@ layout: post
 title: NAR Level 1 High Power Rocket Certification
 order: 3
 description: Built, launched, and iterated on two high-power rockets with the Mudd Amateur Rocketry Club, earning NAR Level 1 certification after diagnosing and rebuilding following a recovery-system failure.
+main-image: rocketlaunching.JPEG
 skills:
   - High-Power Rocketry
   - 3D Printing
