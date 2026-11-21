@@ -2155,3 +2155,16 @@ pre, code {
   .post-view { border-radius: 16px !important; padding-left: 16px; padding-right: 16px; }
   .post-view .content, .post-view .content p, .post-view .content li { font-size: .86rem; }
 }
+
+/* Final readability tuning for the monospaced body face */
+.portfolio-projects .project-description { font-size: .92rem !important; }
+.post-view .content, .post-view .content p, .post-view .content li {
+  font-size: .96rem !important;
+}
+@media (max-width: 650px) {
+  .post-view .content, .post-view .content p, .post-view .content li {
+    font-size: .90rem !important;
+    line-height: 1.75 !important;
+  }
+  .portfolio-projects .project-description { font-size: .90rem !important; }
+}
